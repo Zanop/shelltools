@@ -22,6 +22,6 @@ function cprint {
         code='36m';;
     'white')
         code='37m';;
-esac
-    echo -en "${CSI}${code}${2}${CSI}0m"
+    esac
+    	echo -en "${CSI}${code}${2}${CSI}0m"
 }

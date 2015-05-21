@@ -1,5 +1,11 @@
 #!/bin/bash
-
+#
+# (c) 2015 Vladimir Smolensky <arizal@gmail.com> under the GPL
+#     http://www.gnu.org/licenses/gpl.html
+#
+# 
+#Quick partitioning for gentoo rescue
+#
 echo -n "Partitioning sda..."
 DEVICE_TARGET="/dev/sda"
 parted --script ${DEVICE_TARGET} mklabel gpt

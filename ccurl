@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+wout=\
+"TApp: %{time_appconnect}\n\
+TTot: %{time_connect}\n\
+TDns: %{time_namelookup}\n\
+TPre: %{time_pretransfer}\n\
+TRdr: %{time_redirect}\n\
+TTFB: %{time_starttransfer}\n\
+-------------\n\
+TTot: %{time_total}\n"
+
+curl -o /dev/null -w "$wout" $@
